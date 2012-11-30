@@ -1,0 +1,12 @@
+%form{:id => "search", :autocomplete => "off"}
+  %fieldset
+    %ol
+      %li
+        %input{:type => "text", :name => "search", :id => "searchbar", :placeholder => "Search for a Song, Artist or Album"}
+#output
+  #results
+    %p loading...
+  :javascript
+    $('#searchbar').val('#{@ytid}');
+    setTimeout(function(){$('#results').slideDown()},500);
+    $('#results').text('#{@msg}');

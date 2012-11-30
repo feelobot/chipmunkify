@@ -1,0 +1,90 @@
+/* Part of the CI_Fire Framework - http://www.github.com/magnitt/cifire */
+
+@CHARSET "UTF-8";
+
+/* ===( RESET )=== */
+html { color: #000; background: #FFF; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+table, thead, th, tbody, tr, td, a, fieldset, img { border: 0; }
+address, caption, cite, code, dfn, th, var { font-style: normal; font-weight: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: '' }
+abbr, acronym { border: 0; font-variant: normal; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit; }
+input, textarea, select { *font-size: 100% }
+legend { color: #000; }
+:focus,:active { outline:0; }
+a { text-decoration:none; }
+
+/* ===( STATIC CLASSES )=== */
+body { min-width: 480px; }
+body.default,
+body.pc { max-width: 960px; }
+body.sd { max-width:1280px; }
+body.hd { max-width:1920px; }
+body.mobile { max-width: initial; }
+
+
+/* Containers */
+.columns, .cells { display: inline-block; }
+.col, .cell { float:left; }
+.col { height:100% }
+
+/* Atrributes */
+.full { width: 100% !important; }
+.half { width: 50% !important; }
+
+.no-wrap { width:auto; }
+.left { float:left !important; }
+.right { float:right !important; }
+.centered, .nofloat, .wrap { float:none !important; }
+.centered { margin:0 auto; }
+.clear { clear:both; }
+.block { display:block; }
+.hidden { display:none !important; }
+.hide, .tab { display:none; }
+.active.tab { display:initial; }
+
+div.tab.active { display:block !important; }
+.visible { visibility:visible !important; }
+.invisible { visibility:hidden !important; }
+
+.txtc { text-align: center; }
+.txtr { text-align: right; }
+.txtl { text-align: left; }
+
+/*=( Navigation )=*/
+
+/* Components */
+ul.menu, ul.nav { list-style:none; width:auto; }
+ul.hold li { display:list-item !important; }
+ul.nav { display:inline-block; }
+ul.nav li { float:left; }
+ul.menu li a, ul.nav li a { margin: 0px; padding: 0px; display: block; }
+ul.list, ol.list { list-style: initial; }
+
+.droptab, .dropdown { z-index: 10000; position: fixed; }
+.lower-bar { position:fixed; z-index: 5000; bottom:0; left:0; }
+.upper-bar { position:fixed; z-index: 5000; top:0; left:0; }
+.pad { padding: 0px; }
+.container { }
+
+/* Elements */
+.button { display: inline-block; }
+
+/*=( Background )=*/
+#bg
+{
+	background: no-repeat center center;
+	background-size: 100%;
+	position:fixed;
+	top: 0; left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+}
